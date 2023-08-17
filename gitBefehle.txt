@@ -5,4 +5,12 @@ git remote add myversion https://github.com/StormGoth/froozenyogurtshop.git
 # durchführung der änderungen
 git add gitBefehle.txt
 git commit -am 'Übersetzung des Menüs und des Footers'                    
-git push -u myversion dev_fichl_translation
+git push -u myversion dev_fichl_translation -f
+# Aufgabe Teil2
+ git checkout -b bugfix001
+ # alle gefundenen Fehler gefixt
+ git commit -am 'Fix style.css, link in menu'
+ git push -u myversion
+ git checkout dev_fichl_translation
+ git merge bugfix001
+ git push -u myversion
