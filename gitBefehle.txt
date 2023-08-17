@@ -1,0 +1,8 @@
+git clone https://github.com/mh-biplus/froozenyogurtshop.git
+cd froozenyogurtshop
+git checkout -b dev_fichl_translation
+git remote add myversion https://github.com/StormGoth/froozenyogurtshop.git
+# durchführung der änderungen
+git add gitBefehle.txt
+git commit -am 'Übersetzung des Menüs und des Footers'                    
+git push -u myversion dev_fichl_translation
